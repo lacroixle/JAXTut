@@ -26,8 +26,6 @@ Two libraries that we will explore fall outside the pure-JAX scope of this tutor
  - [Equinox](https://github.com/patrick-kidger/equinox) ― best seen as an extension of JAX: a pytree-based module system, filtered transformations, and tools for manipulating pytrees (plus NN layers we won't use).
  - [Optimistix](https://github.com/patrick-kidger/optimistix/) ― a general purpose optimization library, which serves as an application to the autograd engine
 
-TODO: ajouter liens de Kidger une fois que les sites ne seront plus down.
-
 Once you have these foundations, you can start exploring the wider ecosystem of libraries built on JAX.
 You'll find a curated set [here](notes/links.md), spanning both broadly useful libraries and more specialised, technical ones.
 
