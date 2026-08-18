@@ -5,7 +5,7 @@ Welcome to the JAX tutorial taught at the Rodolphe Clédassou summer school (202
 
 [JAX](https://docs.jax.dev/en/latest/index.html) is a general purpose scientific computation Python library, built around a NumPy-like API and a set of composable function transformations:
 - JIT-compilable: `jit` traces a function and compiles it to optimized kernels.
-- Automatic differentiation: grad differentiates native Python code to arbitrary order.
+- Automatic differentiation: differentiate native Python code to arbitrary order.
 - Automatic vectorization: `vmap` maps a function over an array axis, producing a batched version without an explicit loop.
 - Hardware-accelerated: the same code runs on CPU, GPU, or TPU.
 
