@@ -29,14 +29,6 @@ One library that we will somewhat explore fall outsides the pure-JAX scope of th
 Once you have these foundations, you can start exploring the wider ecosystem of libraries built on JAX.
 You'll find a curated set [here](notes/links.md), spanning both broadly useful libraries and more specialised, technical ones.
 
-### What about GPUs?
-The notebooks run perfectly fine on GPU (but comparison with NumPy will be obviously skewed).
-One of JAX's real strengths is that the same code runs unchanged across CPU, GPU, and TPU and handles compilation and device placement for you.
-Even fairly involved projects rarely need any device-specific code.
-
-In particular, we won't cover [sharding](https://docs.jax.dev/en/latest/notebooks/shard_map.html) (the general mechanism for distributing arrays across multiple devices) nor [manual host-device memory transfers](https://docs.jax.dev/en/latest/notebooks/host-offloading.html).
-Everything you learn here applies equally well to GPUs, and gives you a good basis before tackling those kinds of low-level optimizations.
-
 ## Notebook organization
 The tutorial is organized around Jupyter notebooks.
 
@@ -48,6 +40,16 @@ Recommended order:
 - [ControlFlow_Scan](notebook/ControlFlow_Scan.ipynb) ― Sequential scanning in JAX
 - [Pytrees](notebook/Pytrees.ipynb) ― Pytrees and why they are important to build large scale software/computations
 - [Autodiff_Basic](notebook/Autodiff_Basic.ipynb) ― Automatic differentiation engine in JAX
+
+It is a good idea, while working on those notebooks (and with JAX in general when starting), to have the ["🔪 JAX - The Sharp Bits 🔪"](https://docs.jax.dev/en/latest/notebooks/Common_Gotchas_in_JAX.html) webpage open in a tab (which we cover fully in these notebooks).
+
+## What about GPUs?
+The notebooks run perfectly fine on GPU (but comparison with NumPy will be obviously skewed).
+One of JAX's real strengths is that the same code runs unchanged across CPU, GPU, and TPU and handles compilation and device placement for you.
+Even fairly involved projects rarely need any device-specific code.
+
+In particular, we won't cover [sharding](https://docs.jax.dev/en/latest/notebooks/shard_map.html) (the general mechanism for distributing arrays across multiple devices) nor [manual host-device memory transfers](https://docs.jax.dev/en/latest/notebooks/host-offloading.html).
+Everything you learn here applies equally well to GPUs, and gives you a good basis before tackling those kinds of low-level optimizations.
 
 ## Installation
 Since this tutorial is simply a collection of notebooks, there is not much to install.
