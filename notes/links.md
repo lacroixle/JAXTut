@@ -26,4 +26,4 @@ General tools for use in JAX.
 - [lineax](https://github.com/patrick-kidger/lineax) ― Linear solver
 - [BlackJAX](https://github.com/blackjax-devs/blackjax) ― Sampler
 - [PySR](https://github.com/astroautomata/PySR) ― Symbolic expression optimization
-
+- [NumPyro](https://github.com/pyro-ppl/numpyro) ― Probabilistic programming
