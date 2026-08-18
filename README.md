@@ -44,10 +44,10 @@ Recommended order:
 - [BasicJAX](notebook/BasicJAX.ipynb) ― Major differences between JAX & NumPy and just-in-time compilation transform
 - [Random](notebook/Random.ipynb) ― Pseudo random number generation in JAX
 - [Vmap](notebook/Vmap.ipynb) ― Vmap transform and its applications
-- [ControlFlow_Loop](notebook/ControlFlow_Loop.ipynb) ― While and for loops in JAX
+- [ControlFlow_Loop](notebook/ControlFlow_Loops.ipynb) ― While and for loops in JAX
 - [ControlFlow_Scan](notebook/ControlFlow_Scan.ipynb) ― Sequential scanning in JAX
-- [Pytrees](notebook/Pytrees.ipynb) ― Pytrees and why they are important to build large scale softwares/computations
-- [AutogradBasics](notebook/AutogradBasics.ipynb) ― Autograd engine in JAX
+- [Pytrees](notebook/Pytrees.ipynb) ― Pytrees and why they are important to build large scale software/computations
+- [Autodiff_Basic](notebook/Autodiff_Basic.ipynb) ― Automatic differentiation engine in JAX
 
 ## Installation
 Since this tutorial is simply a collection of notebooks, there is not much to install.
