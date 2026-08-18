@@ -55,7 +55,7 @@ Everything you learn here applies equally well to GPUs, and gives you a good bas
 Since this tutorial is simply a collection of notebooks, there is not much to install.
 However, it is always good practice to have dedicated environnements.
 
-To retrieve the content of this GIT repos (in your current directory):
+To retrieve the content of this git repos (in your current directory):
 ```bash
 git clone https://github.com/lacroixle/JAXTut
 ```
