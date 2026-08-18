@@ -17,14 +17,14 @@ This tutorial covers plain, pure JAX itself, not the deep learning frameworks or
 Those, though, are easier to approach once you have a working grasp of JAX.
 
 In particular, we consider:
-- How to think in JAX (functionnal programming, transformations, control flow)
+- How to think in JAX (pure functionnal programming, transformations, control flow)
 - Its CPU performance, compared against NumPy
 - How JAX handles randomness
-- Structuring data and state with
+- Structuring data and state with pytrees
+- The automatic differentiation engine
 
-Two libraries that we will explore fall outside the pure-JAX scope of this tutorial:
+One library that we will somewhat explore fall outsides the pure-JAX scope of this tutorial:
  - [Equinox](https://github.com/patrick-kidger/equinox) ― best seen as an extension of JAX: a pytree-based module system, filtered transformations, and tools for manipulating pytrees (plus NN layers we won't use).
- - [Optimistix](https://github.com/patrick-kidger/optimistix/) ― a general purpose optimization library, which serves as an application to the autograd engine
 
 Once you have these foundations, you can start exploring the wider ecosystem of libraries built on JAX.
 You'll find a curated set [here](notes/links.md), spanning both broadly useful libraries and more specialised, technical ones.
@@ -48,19 +48,22 @@ Recommended order:
 - [ControlFlow_Scan](notebook/ControlFlow_Scan.ipynb) ― Sequential scanning in JAX
 - [Pytrees](notebook/Pytrees.ipynb) ― Pytrees and why they are important to build large scale softwares/computations
 - [AutogradBasics](notebook/AutogradBasics.ipynb) ― Autograd engine in JAX
-- [OptimistixMinimization](notebook/OptimistixMinimization.ipynb) ― Optimization using Optimistix
-
 
 ## Installation
 Since this tutorial is simply a collection of notebooks, there is not much to install.
 However, it is always good practice to have dedicated environnements.
+
+To retrieve the content of this GIT repos (in your current directory):
+```bash
+git clone https://github.com/lacroixle/JAXTut
+```
 
 ### Through venv/pip
 
 ``` bash
 python3 -m venv path/to/environnement
 source path/to/environnement/bin/activate
-pip install jax matplotlib jupyterlab optimistix
+pip install jax matplotlib jupyterlab equinox
 ```
 
 Then to activate:
@@ -73,7 +76,7 @@ With `JAXTut` as environnement name:
 ``` bash
 conda create -n JAXTut
 conda activate JAXTut
-conda install jax matplotlib jupyterlab optimistix
+conda install -c conda-forge jax matplotlib jupyterlab equinox
 ```
 
 Then to activate:
