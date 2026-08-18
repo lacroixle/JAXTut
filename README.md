@@ -44,7 +44,7 @@ Recommended order:
 - [BasicJAX](notebook/BasicJAX.ipynb) ― Major differences between JAX & NumPy and just-in-time compilation transform
 - [Random](notebook/Random.ipynb) ― Pseudo random number generation in JAX
 - [Vmap](notebook/Vmap.ipynb) ― Vmap transform and its applications
-- [ControlFlow_Loop](notebook/ControlFlow_Loops.ipynb) ― While and for loops in JAX
+- [ControlFlow_Loops](notebook/ControlFlow_Loops.ipynb) ― While and for loops in JAX
 - [ControlFlow_Scan](notebook/ControlFlow_Scan.ipynb) ― Sequential scanning in JAX
 - [Pytrees](notebook/Pytrees.ipynb) ― Pytrees and why they are important to build large scale software/computations
 - [Autodiff_Basic](notebook/Autodiff_Basic.ipynb) ― Automatic differentiation engine in JAX
@@ -87,7 +87,7 @@ conda activate JAXTut
 ### JAX with GPUs and TPUs
 [Read this.](https://docs.jax.dev/en/latest/installation.html#nvidia-gpu)
 
-If you're using [CC-IN2P3 Jupyter notebooks](https://notebook.cc.in2p3.fr/hub/spawn), there is not much to install (apart from Equinox and Optimistix), and simply need to select a GPU interactive session with a "scientific kernel".
+If you're using [CC-IN2P3 Jupyter notebooks](https://notebook.cc.in2p3.fr/hub/spawn), there is not much to install (apart from Equinox), and simply need to select a GPU interactive session with a "scientific kernel".
 
 Note that fast double-precision (FP64) is limited to NVIDIA's compute-focused GPUs (V100, A100, H100, ...).
 On all their other cards (including your laptop GPU), FP64 runs at only 1/64 of the single-precision (FP32) rate.
