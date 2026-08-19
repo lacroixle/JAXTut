@@ -27,3 +27,4 @@ General tools for use in JAX.
 - [BlackJAX](https://github.com/blackjax-devs/blackjax) ― Sampler
 - [PySR](https://github.com/astroautomata/PySR) ― Symbolic expression optimization
 - [NumPyro](https://github.com/pyro-ppl/numpyro) ― Probabilistic programming
+- [sparsejac](https://github.com/mfschubert/sparsejac) ― Sparse jacobian computation
